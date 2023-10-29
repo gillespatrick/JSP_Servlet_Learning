@@ -14,6 +14,7 @@
     <%-- Call the method in the same JSP page --%>
     
     <%! String name = "JOHN DOE"; %>
+    
     <%! String makeItLower(String data){
         return data.toLowerCase();
     } 
