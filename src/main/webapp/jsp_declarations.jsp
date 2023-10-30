@@ -15,9 +15,13 @@
     
     <%! String name = "JOHN DOE"; %>
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 >>>>>>> 31857de (JSP DECLARATION  <%! Declare a variable or method %>)
+=======
+    
+>>>>>>> 6596f3a (Call java class from jsp)
     <%! String makeItLower(String data){
         return data.toLowerCase();
     } 
