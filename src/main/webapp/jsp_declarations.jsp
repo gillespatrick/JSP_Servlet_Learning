@@ -14,7 +14,10 @@
     <%-- Call the method in the same JSP page --%>
     
     <%! String name = "JOHN DOE"; %>
+<<<<<<< HEAD
     
+=======
+>>>>>>> 31857de (JSP DECLARATION  <%! Declare a variable or method %>)
     <%! String makeItLower(String data){
         return data.toLowerCase();
     } 
