@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title>Student Form Drop Down List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container-fluid col-5"><br><br><br>
+
+            <form action="student_dropdown_response.jsp">
+                <fieldset>
+                    <legend>Student Form Drop Down List</legend>
+
+                    <div class="form-group">
+                        <label class="form-label mt-4">First Name</label>
+                        <input type="text" class="form-control"  placeholder="First Name" name="firstName">
+                    </div><br>
+
+                    <div class="form-group">
+                        <label class="form-label mt-4">Last Name</label>
+                        <input type="text" class="form-control"  placeholder="Last Name" name="lastName">
+                    </div>
+
+                    <br>
+                    <div class="form-group">
+                        <label class="form-label mt-4">Country</label>
+                        <select class="form-select" name="country">
+                            <option>Cameroon</option>
+                            <option>Gabon</option>
+                            <option>Togo</option>
+                            <option>Benin</option>
+                            <option>Nigeria</option>
+                            <option>Ghana</option>
+                            <option>Gambia</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success">Send</button>
+                </fieldset>
+            </form>
+
+
+
+        </div>
+    </body>
+</html>
