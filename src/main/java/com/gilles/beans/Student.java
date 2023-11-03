@@ -8,12 +8,12 @@ package com.gilles.beans;
 public class Student {
     private String lastName;
     private String firstName;
-    private boolean goldCusomer;
+    private String email;
 
-    public Student(String lastName, String firstName, boolean goldCusomer) {
+    public Student(String lastName, String firstName, String email) {
         this.lastName = lastName;
         this.firstName = firstName;
-        this.goldCusomer = goldCusomer;
+        this.email = email;
     }
 
     public String getLastName() {
@@ -32,13 +32,15 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public boolean isGoldCusomer() {
-        return goldCusomer;
+    public String getEmail() {
+        return email;
     }
 
-    public void setGoldCusomer(boolean goldCusomer) {
-        this.goldCusomer = goldCusomer;
+    public void setEmail(String email) {
+        this.email = email;
     }
+
+   
     
     
 }

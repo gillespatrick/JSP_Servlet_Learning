@@ -1,4 +1,4 @@
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
     <head>
         <title>Student Form</title>
@@ -9,6 +9,39 @@
         <jsp:directive.include file="/part/header.jsp"/>
         <div class="container-fluid col-5"><br><br><br>
 
+            <%-- MVC Servlet and JSP 
+            <c:forEach var="temp" items="${myStudent}">
+                ${temp}<br>
+            </c:forEach>
+            --%>
+            <br><br>
+            <h1>Student list</h1><br><br>
+
+            <table class="table table-hover">
+
+
+                <thead>
+                    <tr>
+
+                        <th scope="col">Last Name</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <c:forEach var="temp" items="${myStudent}">
+                        <tr class="table-active">
+                            <td>${temp.lastName}</td>
+                            <td>${temp.firstName}</td>
+                            <td>${temp.email}</td>
+                        </tr>
+                    </c:forEach>
+
+                </tbody>
+            </table>
+
+            <%--
             <form action="student_form.jsp" method="GET">
                 <fieldset>
                     <legend>Student Form</legend>
@@ -31,6 +64,8 @@
             Your name is ${param.firstName} ${lastName}
 
         </div>
-        <jsp:directive.include file="/part/footer.jsp"/>
+            --%>
+            <br><br><br><br><br><br>
+            <jsp:directive.include file="/part/footer.jsp"/>
     </body>
 </html>
