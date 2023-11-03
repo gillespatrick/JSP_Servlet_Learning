@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="home">Test Servlet</a>
+        <a class="navbar-brand" href="<c:url value="/"/>">Test Servlet</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,28 +22,7 @@
            
                
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Welcome Admin
-
-                        </a>
-                    </li>
-                     
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Logout
-
-                        </a>
-                    </li>
-                 
-                    
-                </ul>
-              
-               
-
-            </form>
+         
         </div>
     </div>
 </nav>
